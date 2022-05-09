@@ -12,6 +12,13 @@ app.get('/launchx', (req, res) => {
     res.send("Bienvenidos a launchX!!")
 })
 
+app.get('/node', (req, res) => {
+    const explorer1 = { id: 1, name: "Explorer1"}
+    const explorer2 = { id: 1, name: "Explorer2"}
+    const explorer3 = { id: 1, name: "Explorer3"}
+    res.send([explorer1, explorer2, explorer3])
+})
+
 app.listen(port, () => {
     console.log("Server Listo")
 })
